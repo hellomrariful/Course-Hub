@@ -18,8 +18,8 @@
     {
         "id": 3,
         "image": "https://i.ibb.co/m8x36wP/Rectangle-2-4.png",
-        "title": "C++ for Data Structures and Algorithms",
-        "description": "Master C++ programming with a focus on Data Structures and Algorithms in this comprehensive course.",
+        "title": "C++ for DSA: A Solid Start",
+        "description": "Master Data Structures and Algorithms (DSA) using C++ in this introductory course.",
         "price": "10000",
         "credit": 10
     },
