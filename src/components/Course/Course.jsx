@@ -21,7 +21,7 @@ const Course = ({ course, handelAddToCart }) => {
         </div>
 
         <button
-          onClick={() => handelAddToCart(course)}
+          onClick={() => handelAddToCart({ course })}
           className="text-white text-[18px] font-semibold bg-[#2F80ED] rounded-lg py-2 w-full mt-5 mb-4"
         >
           Select
@@ -34,6 +34,7 @@ const Course = ({ course, handelAddToCart }) => {
 Course.propTypes = {
   course: PropTypes.object.isRequired,
   handelAddToCart: PropTypes.func.isRequired,
+  time: PropTypes.number.isRequired,
 };
 
 export default Course;

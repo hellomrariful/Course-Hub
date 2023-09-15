@@ -25,6 +25,7 @@ const Courses = ({ handelAddToCart }) => {
 
 Courses.propTypes = {
   handelAddToCart: PropTypes.func.isRequired,
+  time: PropTypes.number.isRequired,
 };
 
 export default Courses;
