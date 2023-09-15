@@ -37,18 +37,20 @@ function App() {
 
   return (
     <>
-      <div className="bg-[#F3F3F3] max-w-screen-2xl mx-auto pb-20 lg:px-16 md:px-16 xl:px-32 2xl:px-32 px-6">
-        <Header></Header>
+      <div className="bg-[#F3F3F3] items-center">
+        <div className=" container mx-auto  md: xl: 2xl:px-32 lg:px-3 px-6 pb-20 pt-10">
+          <Header></Header>
 
-        <div className="lg:flex md:flex justify-between gap-4">
-          <Courses handelAddToCart={handelAddToCart}></Courses>
-          <Carts
-            totalTime={totalTime}
-            remaining={remaining}
-            carts={carts}
-          ></Carts>
+          <div className="lg:flex md:flex justify-between gap-4">
+            <Courses handelAddToCart={handelAddToCart}></Courses>
+            <Carts
+              totalTime={totalTime}
+              remaining={remaining}
+              carts={carts}
+            ></Carts>
+          </div>
+          <Toaster position="top-center" reverseOrder={true}></Toaster>
         </div>
-        <Toaster position="top-center" reverseOrder={true}></Toaster>
       </div>
     </>
   );

@@ -11,7 +11,7 @@ const Courses = ({ handelAddToCart }) => {
       .then((data) => setCourses(data));
   }, []);
   return (
-    <div className="md:grid lg:grid grid-cols-3 gap-4 space-y-8 md:space-y-0 lg:space-y-0 ">
+    <div className="md:grid md:gap-2 lg:grid lg:grid-cols-3 md:grid-cols-2 gap-4 space-y-8 md:space-y-4 lg:space-y-6 xl:space-y-12">
       {courses.map((course) => (
         <Course
           key={courses.id}
