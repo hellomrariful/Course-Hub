@@ -10,7 +10,7 @@
 <details>
 <summary style="font-weight: bold; font-size:20px">How I managed the state in this project.</summary>
 
-Basically, in this project, I used three React built-in `useState` hooks: `cart`, `remaining`, `totalTime`, and `courses` to manage data related to the shopping cart and credit hours.
+Basically, in this project, I used four React built-in `useState` hooks to manage component-level state. Specifically, I used state variables like `cart`, `remaining`, `totalTime`, and `courses`.
 
 - I set the initial value for `cart` as an empty array `[]`.
 - For `remaining`, I set the default value to 20.
