@@ -16,7 +16,23 @@ function App() {
     let count = course.credit;
 
     if (isExist) {
-      toast.error("Course already added, Please check your list.");
+      const displayErrorToast = () => {
+        toast.dismiss("error-toast");
+        toast.error("Course already added,Please check your list.", {
+          id: "error-toast",
+          duration: 1000,
+          style: {
+            padding: "8px",
+            paddingLeft: "18px",
+            color: "#ED4337",
+          },
+          iconTheme: {
+            primary: "#ED4337",
+            secondary: "#FFFFFF",
+          },
+        });
+      };
+      displayErrorToast();
     } else {
       carts.forEach((i) => {
         count += i.credit;
@@ -25,7 +41,23 @@ function App() {
       const totalTimeRemaining = 20 - count;
 
       if (count > 20) {
-        return toast.error("Credit hour limit exceeded.");
+        const displayErrorToast = () => {
+          toast.dismiss("error-toast");
+          toast.error("Credit hour limit exceeded.", {
+            id: "error-toast",
+            duration: 1000,
+            style: {
+              padding: "14px",
+
+              color: "#ED4337",
+            },
+            iconTheme: {
+              primary: "#ED4337",
+              secondary: "#FFFFFF",
+            },
+          });
+        };
+        displayErrorToast();
       } else {
         setTotalTime(count);
         setRemaining(totalTimeRemaining);
@@ -34,7 +66,6 @@ function App() {
       }
     }
   };
-
   return (
     <>
       <div className="bg-[#F3F3F3] items-center">
