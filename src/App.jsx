@@ -18,9 +18,9 @@ function App() {
     if (isExist) {
       const displayErrorToast = () => {
         toast.dismiss("error-toast");
-        toast.error("Course already added,Please check your list.", {
+        toast.error("This course has already been added, Please check the list.", {
           id: "error-toast",
-          duration: 1000,
+          duration: 2300,
           style: {
             padding: "8px",
             paddingLeft: "18px",
